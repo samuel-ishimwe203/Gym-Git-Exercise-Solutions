@@ -632,22 +632,6 @@ index 352c80a..bfd5938 100644
 -
 -
 
--```
-\ No newline at end of file
-diff --git a/services.html b/services.html
-index f7106a1..10fdef3 100644
---- a/services.html
-+++ b/services.html
-@@ -8,8 +8,6 @@
- <body>
-
-     <h2>servise page</h2>
--    <h4>My name is samuel</h4>
--    <h4>From Nyagatare</h4>
-
- </body>
- </html>
-\ No newline at end of file
-(END)
 ```
+
 
