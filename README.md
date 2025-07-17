@@ -1,0 +1,311 @@
+# Git Exercises project
+This project will be used for many git exercises
+
+## Bandle 1
+  # Exercise 1
+
+```bash
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises
+$ git init
+Initialized empty Git repository in C:/Users/user/Desktop/My folder/Gym-Git-Exercises/.git/
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (master)
+$ touch index.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (master)
+$ git checkout -b main
+Switched to a new branch 'main'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch -m main master
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (master)
+$ git branch -m master main
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git commit -m"To rename master branch to main updated"
+[main (root-commit) 3feb14f] To rename master branch to main updated
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git log --oneline
+3feb14f (HEAD -> main) To rename master branch to main updated
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git remote add origin https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+
+$ git push -u origin main
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 234 bytes | 234.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git push
+Everything up-to-date
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git remote -v
+origin  https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git (push)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch dev
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git branch test
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git branch
+* dev
+  main
+  test
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout test
+Switched to branch 'test'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (test)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git checkout dev
+Switched to branch 'dev'
+
+
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises ((3feb14f...))
+$ git checkout dev
+Switched to branch 'dev'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git branch -d test
+Deleted branch test (was 3feb14f).
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git branch
+* dev
+  main
+## Exercise 2
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ touch home.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"The second file is add to my git"
+[dev ab9c794] The second file is add to my git
+ 1 file changed, 13 insertions(+)
+ create mode 100644 home.html
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 447 bytes | 447.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'dev' on GitHub by visiting:
+remote:      https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions/pull/new/dev
+remote:
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+ * [new branch]      dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ touch about.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"They are some changes in about page"
+[dev de3d27d] They are some changes in about page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 about.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 494 bytes | 494.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   ab9c794..de3d27d  dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push
+Everything up-to-date
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev 
+branch 'dev' set up to track 'origin/dev'.
+Everything up-to-date
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git stash
+Saved working directory and index state WIP on dev: de3d27d They are some changes in about page
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ touch team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"New file again called team"
+[dev 6884e59] New file again called team
+ 1 file changed, 11 insertions(+)
+ create mode 100644 team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 450 bytes | 450.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   de3d27d..6884e59  dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push
+Everything up-to-date
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"updated"
+[dev 07f17db] updated
+ 1 file changed, 3 insertions(+)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 346 bytes | 346.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   6884e59..07f17db  dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev
+branch 'dev' set up to track 'origin/dev'.
+Everything up-to-date
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 07f17db updated
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 07f17db updated
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"updated"
+[dev ffa99f8] updated
+ 1 file changed, 4 insertions(+)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push -u origin dev
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   07f17db..ffa99f8  dev -> dev
+branch 'dev' set up to track 'origin/dev'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push
+Everything up-to-date
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m"updated "
+[dev ac83d95] updated
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git branch
+* dev
+  main
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git log --oneline
+ac83d95 (HEAD -> dev) updated
+ffa99f8 (origin/dev) updated
+07f17db updated
+6884e59 New file again called team
+de3d27d They are some changes in about page
+ab9c794 The second file is add to my git
+3feb14f (origin/main, main) To rename master branch to main updated
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git reset
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ rm team.htmls
+
+```
