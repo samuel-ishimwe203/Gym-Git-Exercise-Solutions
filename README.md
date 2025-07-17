@@ -508,6 +508,9 @@ Dropped stash@{3} (9ecb06c16c8545f788e3b35b8c87e45fb733efdc)
 
 
 ```
+
+# Bundle 2 exercise 2
+=======
 ## Bundle 2
 # Exercise 2
 
@@ -653,6 +656,7 @@ index f7106a1..10fdef3 100644
 
 =======
 # Bundle 2 Exercise 2
+
 ```bash
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
 $ git pull origin main
@@ -688,6 +692,7 @@ To push the current branch and set the remote as upstream, use
 
 To have this happen automatically for branches without a tracking
 upstream, see 'push.autoSetupRemote' in 'git help config'.
+
 
 
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
@@ -764,4 +769,198 @@ To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
 
 
 ```
+
+=======
+ ```
+-# Bundle 2 Exercise 2
+-```bash
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git pull origin main
+-From https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions
+- * branch            main       -> FETCH_HEAD
+-Already up to date.
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git branch ft/service-redesign
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git switch ft/service-redesign
+-Switched to branch 'ft/service-redesign'
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ touch service.html
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ git add .
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ git commit -m"service updated"
+-[ft/service-redesign 64294ad] service updated
+- 1 file changed, 12 insertions(+)
+- create mode 100644 service.html
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ git push
+-fatal: The current branch ft/service-redesign has no upstream branch.
+-To push the current branch and set the remote as upstream, use
+-
+-    git push --set-upstream origin ft/service-redesign
+-
+-To have this happen automatically for branches without a tracking
+-upstream, see 'push.autoSetupRemote' in 'git help config'.
+-
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ git push origin ft/service-redesign
+-Enumerating objects: 8, done.
+-Counting objects: 100% (8/8), done.
+-Delta compression using up to 16 threads
+-Compressing objects: 100% (6/6), done.
+-Writing objects: 100% (6/6), 1.71 KiB | 1.71 MiB/s, done.
+-Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+-remote:
+-remote: Create a pull request for 'ft/service-redesign' on GitHub by visiting:
+-remote:      https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions/pull/new/ft/service-redesign
+-remote:
+-To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+- * [new branch]      ft/service-redesign -> ft/service-redesign
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/service-redesign)
+-$ git switch main
+-Switched to branch 'main'
+-Your branch is ahead of 'origin/main' by 1 commit.
+-  (use "git push" to publish your local commits)
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git add .
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git commit -m"Their is some changes on service file"
+-[main d782c45] Their is some changes on service file
+- 1 file changed, 2 insertions(+)
+-
+- user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git add .
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git commit -m"service changes something"
+-[main ffadd0c] service changes something
+- 1 file changed, 16 deletions(-)
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git pull
+-Auto-merging service.html
+-Merge made by the 'ort' strategy.
+- service.html | 12 ++++++++++++
+- 1 file changed, 12 insertions(+)
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git add .
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git commit -m"service changes something"
+-On branch main
+-Your branch is ahead of 'origin/main' by 5 commits.
+-  (use "git push" to publish your local commits)
+-
+-nothing to commit, working tree clean
+-
+-user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+-$ git push
+-Enumerating objects: 18, done.
+-Counting objects: 100% (17/17), done.
+-Counting objects: 100% (17/17), done.
+-Counting objects: 100% (17/17), done.
+-Counting objects: 100% (17/17), done.
+-Delta compression using up to 16 threads
+-Compressing objects: 100% (13/13), done.
+-Writing objects: 100% (13/13), 1.29 KiB | 1.29 MiB/s, done.
+-Total 13 (delta 8), reused 0 (delta 0), pack-reused 0 (from 0)
+-remote: Resolving deltas: 100% (8/8), completed with 2 local objects.
+-To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+-   3e383b1..1faabb0  main -> main
+-
+-
+### Bandle 3 Exercise 1
+
+```bash
+
+ git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ touch team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git commit -m"team page updated"
+[ft/team-page 72baa12] team page updated
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git push
+fatal: The current branch ft/team-page has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/team-page
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git push origin ft/team-page
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 338 bytes | 338.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions/pull/new/ft/team-page
+remote:
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git add README.md
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git commit -m"new changes"
+[ft/team-page 1381df7] new changes
+ 1 file changed, 1 insertion(+), 17 deletions(-)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch ft/contact-page
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git branch
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/service-redesign
+  ft/team-page
+* main
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git switch ft/team-page 
+Switched to branch 'ft/team-page'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git log
+commit 1381df74c98bf3dc628ab9e04590461e14a70c5c (HEAD -> ft/team-page)
+```
+
+
+
 
