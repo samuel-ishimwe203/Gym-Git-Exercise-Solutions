@@ -4,7 +4,7 @@ This project will be used for many git exercises
 ## Bandle 1
   # Exercise 1
 
-
+``` bash
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises
 $ git init
 Initialized empty Git repository in C:/Users/user/Desktop/My folder/Gym-Git-Exercises/.git/
@@ -307,4 +307,5 @@ $ git reset
 
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
 $ rm team.html
+```
 
