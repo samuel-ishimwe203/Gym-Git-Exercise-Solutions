@@ -109,7 +109,9 @@ user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
 $ git branch
 * dev
   main
+  ```
 ## Exercise 2
+  ```bash
 
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
 $ touch home.html
@@ -309,3 +311,188 @@ user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
 $ rm team.htmls
 
 ```
+## Bundle 2
+  # Exercise 1
+  ```bash
+  user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ touch services.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$
+
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ touch services.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ touch services.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout -b ft/bundle-2
+$ git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ touch services.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git commit -m" first exercise"
+[dev 517fa9e]  first exercise
+ 2 files changed, 323 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 services.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 2.20 KiB | 1.10 MiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   ffa99f8..517fa9e  dev -> dev
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   ffa99f8..517fa9e  dev -> dev
+
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   ffa99f8..517fa9e  dev -> dev
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   ffa99f8..517fa9e  dev -> dev
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout ft/bundle-2
+$ git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git checkout dev
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git stash list
+stash@{0}: WIP on dev: 07f17db updated
+stash@{1}: WIP on dev: 07f17db updated
+stash@{2}: WIP on dev: de3d27d They are some changes in about page
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git stash@{0}
+git: 'stash@{0}' is not a git command. See 'git --help'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git stash pop stash@{0}
+Auto-merging team.html
+CONFLICT (content): Merge conflict in team.html
+On branch ft/bundle-2
+Unmerged paths:
+  (use "git restore --staged <file>..." to unstage)
+  (use "git add <file>..." to mark resolution)
+        both modified:   team.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+The stash entry is kept in case you need it again.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git checkout dev
+team.html: needs merge
+error: you need to resolve your current index first
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git checkout dev
+team.html: needs merge
+error: you need to resolve your current index first
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git switch dev
+team.html: needs merge
+error: you need to resolve your current index first
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git reset
+Unstaged changes after reset:
+M       team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git switch dev
+M       team.html
+Switched to branch 'dev'
+Your branch is up to date with 'origin/dev'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git stash list
+stash@{0}: WIP on dev: 07f17db updated
+stash@{1}: WIP on dev: 07f17db updated
+stash@{2}: WIP on dev: de3d27d They are some changes in about page
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git add README.md
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git stash
+Saved working directory and index state WIP on dev: 517fa9e  first exercise
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (dev)
+$ git switch ft/bundle-2
+Switched to branch 'ft/bundle-2'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/bundle-2)
+$ git stash list
+stash@{0}: WIP on dev: 517fa9e first exercise
+stash@{1}: WIP on dev: 07f17db updated
+stash@{2}: WIP on dev: 07f17db updated
+stash@{3}: WIP on dev: de3d27d They are some changes in about page
+
+  ```
