@@ -508,7 +508,7 @@ Dropped stash@{3} (9ecb06c16c8545f788e3b35b8c87e45fb733efdc)
 
 
 ```
-# Bundle 2 Exercise 2
+# Bundle 2 exercise 2
 ```bash
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
 $ git pull origin main
