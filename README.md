@@ -1203,6 +1203,79 @@ $ git commit -m"this is some changes on home page"
 user@LAPTOP-7PT2H9GQ MINGW64
 
 ```
+#### Bundle 4 Exercise 1
+
+``` bash
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/home-page-redesign)
+$ git switch main
+M       team.html
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git remote add git-copy https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions-copy-rep.git
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git add home.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git commit -m"new changes on home"
+[main c046458] new changes on home
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git add team.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git commit -m"new changes on team"
+[main 1a2fd4a] new changes on team
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git pull
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (1/1), 903 bytes | 301.00 KiB/s, done.
+From https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions
+   21c01ca..4370b49  main            -> origin/main
+   5ef936c..845a218  ft/contact-page -> origin/ft/contact-page
+   417e5c3..0853adf  ft/faq-page     -> origin/ft/faq-page
+Auto-merging home.html
+CONFLICT (content): Merge conflict in home.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main|MERGING)
+$ git add .
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main|MERGING)
+$ git commit -m "changes to copy and origin"
+[main 5b1f03a] changes to copy and origin
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git push origin main
+Enumerating objects: 15, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (9/9), 970 bytes | 970.00 KiB/s, done.
+Total 9 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 4 local objects.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   4370b49..5b1f03a  main -> main
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git push git-copy
+Enumerating objects: 117, done.
+Counting objects: 100% (117/117), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (115/115), done.
+Writing objects: 100% (117/117), 23.53 KiB | 2.35 MiB/s, done.
+Total 117 (delta 64), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (64/64), done.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions-copy-rep.git
+ * [new branch]      main -> main
+
+```
 
 
 
