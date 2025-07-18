@@ -753,8 +753,8 @@ To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
 
 ```
 
-=======
- ```
+
+ 
 # Bundle 2 Exercise 2
 ```bash
 -user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
@@ -1110,6 +1110,97 @@ To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
 
 user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
 $
+
+
+```
+### Bundle 3 Exercise 2
+
+``` bash
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git add README.md
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git commit -m"some changes on README.md"
+[ft/team-page be925c1] some changes on README.md
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/team-page)
+$ git switch ft/faq-page
+Switched to branch 'ft/faq-page'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/faq-page)
+$ git branch ft/home-page-redesign
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/faq-page)
+$ git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git add service.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git commit -m"service changing some changes"
+[main 1b17b06] service changing some changes
+ 1 file changed, 1 insertion(+)
+
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git pull origin main
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 12 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (12/12), 6.25 KiB | 220.00 KiB/s, done.
+From https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+   aa5bfb6..6a5e0af  main       -> origin/main
+Auto-merging service.html
+CONFLICT (content): Merge conflict in service.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main|MERGING)
+$ git add service.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main|MERGING)
+$ git commit -m"service changing some changes"
+[main 21c01ca] service changing some changes
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git pull origin main
+From https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git push origin main
+Enumerating objects: 10, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 607 bytes | 607.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+To https://github.com/samuel-ishimwe203/Gym-Git-Exercise-Solutions.git
+   6a5e0af..21c01ca  main -> main
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (main)
+$ git switch ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/home-page-redesign)
+$ git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/home-page-redesign)
+$ git add home.html
+
+user@LAPTOP-7PT2H9GQ MINGW64 ~/Desktop/My folder/Gym-Git-Exercises (ft/home-page-redesign)
+$ git commit -m"this is some changes on home page"
+[ft/home-page-redesign 6b5ef08] this is some changes on home page
+ 1 file changed, 1 insertion(+)
+
+user@LAPTOP-7PT2H9GQ MINGW64
 
 ```
 
